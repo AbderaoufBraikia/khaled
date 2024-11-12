@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 600px;
+    justify-content: center;
+    background-color: #eee;
+}
+
+.language-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.language-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    font-size: 14px;
+    color: #eddfdf;
+}
+
+.flag-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px;
+    border: 3px solid #9900ff;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #9900ff33;
+    /* Semi-transparent background */
+    transition: 0.3s, color 0.3s;
+    /* Smooth hover transition */
+}
+
+.nav-link:hover {
+    background-color: #9900ff;
+    border-radius: 0;
+}
+
+
+
+
+
+
+label {
+    width: 105px;
+    color: black;
+    font-weight: bold;
+    transform: translate(11px, -40px);
+    transition: .5s ease;
+    display: flex;
+}
+
+input:not(:placeholder-shown)+label,
+input:focus+label {
+    transform: translate(11px, -70px);
+    color: #9900ff;
+}
+
+input:not(:placeholder-shown),
+input:focus {
+    border-bottom: 3px solid #9900ff !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px 0;
+    margin: 10px 0;
+    outline: none;
+    border: unset;
+    border-bottom: 3px solid black;
+    color: #9900ff;
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: transparent;
+    transition: .5s ease;
+}
+
+input[type="submit"] {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #9900ff;
+    border: 3px solid #9900ff;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+input[type="submit"]:hover {
+    color: #9900ff;
+    background-color: transparent;
+    border-radius: 0;
+}
+
+.logo-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    width: auto;
+}
+
+.logo {
+    max-width: 200px;
+}
